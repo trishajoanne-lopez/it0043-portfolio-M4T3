@@ -204,3 +204,75 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+@media (max-width: 480px) {
+    main {
+        padding: 30px 4%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+
+    .about,
+    .characters,
+    .favorites {
+        padding: 30px 18px;
+    }
+
+    .hero-content h2,
+    .about h2,
+    .characters h2,
+    .favorites h2 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 700px) {
+    .character-grid,
+    .favorites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-content,
+    .hero-image {
+        flex: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
