@@ -220,12 +220,15 @@ footer {
     }
 
     .nav-links {
-        gap: 8px;
+        gap: 4px;
+        flex-wrap: nowrap;
     }
 
     .nav-links a {
-        padding: 7px 12px;
-        font-size: 11px;
+        padding: 5px 7px;
+        font-size: 9px;
+        letter-spacing: 0;
+        white-space: nowrap;
     }
 
     .about,
@@ -240,6 +243,26 @@ footer {
     .favorites h2 {
         font-size: 26px;
     }
+
+    .characters h2,
+    .favorites h2 {
+        font-size: 21px;
+    }
+
+    .characters > p,
+    .favorites > p {
+        font-size: 15px;
+    }
+
+    .character-card h3,
+    .favorite-card h3 {
+        font-size: 18px;
+    }
+
+    .character-card p,
+    .favorite-card li {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 700px) {
@@ -253,6 +276,25 @@ footer {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 30px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        padding: 7px 10px;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
     }
 
     .hero {
